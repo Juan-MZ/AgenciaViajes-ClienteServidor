@@ -1,0 +1,13 @@
+INSTALL
+La aplicación Agencia de Viajes Server, por defecto usa datos en un arreglo. Si quiere que funcione con Mysql o Mariadb siga estos pasos:
+
+1. Instale Mysql o Mariadb
+2. Cree una base de datos con cualquier nombre. Puede ser agencia
+3. Sobre esa base de datos ejecute el script agencia.sql para crear la estructura de la base de datos
+4. En el archivo config.properties coloque las variables acorde a su caso: 
+
+server.db.driver=com.mysql.cj.jdbc.Driver
+server.db.url=jdbc:mysql://localhost/agencia
+server.db.username=root
+server.db.password=123
+customer.repository=mysql
